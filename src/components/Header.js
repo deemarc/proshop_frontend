@@ -1,5 +1,7 @@
 import { Col, Container, Navbar, Nav} from 'react-bootstrap'
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 function Header() {
     return (
@@ -20,8 +22,8 @@ function Header() {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="mr-auto">
-                                <Nav.Link href="/cart">Cart</Nav.Link>
-                                <Nav.Link href="/login"><i className="fas fa-user"></i>Logoin</Nav.Link>
+                                <Nav.Link href="/cart"><FontAwesomeIcon icon={faShoppingCart} /> Cart</Nav.Link>
+                                <Nav.Link href="/login"><FontAwesomeIcon icon={faUser} /> Login</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Container>
